@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taxi Park</title>
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/material-scrolltop.css">
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+    <!-- navbar start -->
+    <div class="banner">
+        <header>
+            <div class="container">
+                <nav class="navbar menubar navbar-expand-lg">
+                    <div class="container-fluid menubar">
+                        <div class="logo">
+                            <a href="index.html"><img src="images/logo-inner.png" class="w-100" alt="taxicab"></a>
+                        </div>
+                        <button class="navbar-toggler navbutton" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse items navbar-collapse" id="nav">
+                            <ul class="navbar-nav ms-auto mb-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#about">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#service">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#tariffs">Tariffs</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#contact">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <div class="container d-flex justify-content-center flex-column" data-aos="zoom-out" data-aos-duration="1000">
+            <div class="contact">
+                <h1 class="text-center">Get Taxi Online</h1>
+
+                <!-- Taxi Booking Form -->
+                <form id="taxiBookingForm" class="text-center">
+                    <input type="text" id="passenger_name" placeholder="Enter your name" required>
+                    <input type="tel" id="phone_number" placeholder="Phone number" required>
+                    <input type="text" id="pickup_location" placeholder="Pickup location" required>
+                    <input type="text" id="dropoff_location" placeholder="Drop-off location" required>
+                    <div class="button">
+                        <button type="submit">Get Taxi</button>
+                    </div>
+                </form>
+
+                <div class="banner_img d-flex justify-content-center">
+                    <div class="img w-60">
+                        <img src="images/car-big-2.png" class="w-100" alt="taxicab">
+                    </div>
+
+                    <div class="call_img">
+                        <img src="images/_dialog.png" class="w-100" alt="taxicab">
+                        <div class="call_texi">
+                            <span><i class="fa-solid fa-phone"></i></span>
+                            <span>Call Taxi Now</span>
+                            <span>+8801845476197</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="white_space d-md-block d-none"></div>
+    </div>
+    <!-- navbar end -->
+
+    <!-- about section start -->
+    <section class="about common_section" id="about">
+        <div class="container" data-aos="fade-up" data-aos-duration="1000">
+            <div class="row">
+                <div class="col-12">
+                    <div class="common_heading">
+                        <span>Let's know</span>
+                        <h2>About Us</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about_text">
+                        <h4>Hello there!</h4>
+                        <p>Being a taxi provider in today's digital era means offering more than just rides. It involves leveraging technology to provide reliable, efficient, and convenient transportation solutions. Customers enjoy the ease of booking through mobile apps, real-time tracking, and seamless payment options. Safety and comfort are paramount, ensuring a positive experience for every passenger.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about_img">
+                        <img src="images/car-big-2.png" class="w-100" alt="About Us Taxi">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about section end -->
+
+    <!-- service section start -->
+    <section class="first_section common_section" id="service" data-aos="fade-up" data-aos-duration="1000">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="common_heading">
+                        <span>Welcome</span>
+                        <h2>Our Services</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 single_service col-md-6">
+                    <div class="border_end text-center">
+                        <span class="text-center d-block"><i class="fa-solid fa-map-location-dot"></i></span>
+                        <h3>Rapid City Transfer</h3>
+                        <p>We will bring you quickly and comfortably to anywhere in your city.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 single_service col-md-6">
+                    <div class="border_end text-center">
+                        <span class="text-center d-block"><i class="fa-solid fa-hotel"></i></span>
+                        <h3>Booking a hotel</h3>
+                        <p>If you need a comfortable hotel, our operators will book it for you, and take a taxi to the address.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 single_service col-md-6">
+                    <div class="border_end text-center">
+                        <span class="text-center d-block"><i class="fa-solid fa-plane-departure"></i></span>
+                        <h3>Airport transfer</h3>
+                        <p>We will bring you quickly and comfortably to anywhere in your city.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 single_service col-md-6">
+                    <div class="border_end text-center">
+                        <span class="text-center d-block"><i class="fa-solid fa-suitcase-rolling"></i></span>
+                        <h3>Baggage transport</h3>
+                        <p>If you need a comfortable hotel, our operators will book it for you, and take a taxi to the address.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- service section end -->
+
+    <!-- tariff section start -->
+    <section class="second_section common_section" id="tariffs">
+        <div class="container" data-aos="fade-up" data-aos-duration="1000">
+            <div class="row">
+                <div class="col-12">
+                    <div class="common_heading">
+                        <span>See Our</span>
+                        <h2>Tariffs</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="tariff_box">
+                        <div class="tariff_img">
+                            <img src="images/tariff-1.png" class="w-100" alt="Standard Taxi">
+                        </div>
+                        <h3>Standard</h3>
+                        <p class="text-center">Standard sedan for a drive around the city at your service</p>
+                        <div class="price">
+                            <h3><span>$2</span>/km</h3>
+                        </div>
+                        <div class="rated">
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="tariff_box">
+                        <div class="tariff_img">
+                            <img src="images/tariff-2-Photoroom.png" class="w-100" alt="Business Taxi">
+                        </div>
+                        <h3>Business</h3>
+                        <p class="text-center">Standard sedan for a drive around the city at your service</p>
+                        <div class="price">
+                            <h3><span>$2.7</span>/km</h3>
+                        </div>
+                        <div class="rated">
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="tariff_box">
+                        <div class="tariff_img">
+                            <img src="images/tariff-3-Photoroom.png" class="w-100" alt="Vip Taxi">
+                        </div>
+                        <h3>Vip</h3>
+                        <p class="text-center">Standard sedan for a drive around the city at your service</p>
+                        <div class="price">
+                            <h3><span>$5</span>/km</h3>
+                        </div>
+                        <div class="rated">
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="tariff_box">
+                        <div class="tariff_img">
+                            <img src="images/tariff-4-Photoroom.png" class="w-100" alt="Minivan Taxi">
+                        </div>
+                        <h3>Bus-minivan</h3>
+                        <p class="text-center">Standard sedan for a drive around the city at your service</p>
+                        <div class="price">
+                            <h3><span>$4.5</span>/km</h3>
+                        </div>
+                        <div class="rated">
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- tariff section end -->
+
+    <!-- fifth section start -->
+    <section class="common_section fifth_section">
+        <div class="container" data-aos="fade-up" data-aos-duration="1000">
+            <div class="row">
+                <div class="col-12">
+                    <div class="common_heading">
+                        <span>Happy Client's</span>
+                        <h2>Testimonials</h2>
+                    </div>
+                </div>
+            </div>
+
+            <!-- slider -->
+            <div class="test_slider">
+                <div class="item">
+                    <div class="item_text">
+                        <p>Nullam orci dui, dictum et magna sollicitudin, tempor blandit erat. Maecenas suscipit tellus sit amet augue placerat fringilla a id lacus.</p>
+                    </div>
+                    <div class="profile">
+                        <div class="p_icon"><i class="fa-solid fa-quote-left"></i></div>
+                        <h4>Anastasia Stone</h4>
+                        <div class="pro_pic">
+                            <img src="images/client-1.jpg" class="w-100" alt="Client Anastasia">
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item_text">
+                        <p>Suspendisse nec arcu sed nibh lacinia pretium. Phasellus eros ligula, mattis id rutrum non, eleifend vitae lacus.</p>
+                    </div>
+                    <div class="profile">
+                        <div class="p_icon"><i class="fa-solid fa-quote-left"></i></div>
+                        <h4>Patrikomi James</h4>
+                        <div class="pro_pic">
+                            <img src="images/client-4.jpg" class="w-100" alt="Client Patrikomi">
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item_text">
+                        <p>Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur dapibus pulvinar.</p>
+                    </div>
+                    <div class="profile">
+                        <div class="p_icon"><i class="fa-solid fa-quote-left"></i></div>
+                        <h4>Anastasia Stone</h4>
+                        <div class="pro_pic">
+                            <img src="images/client-5.jpg" class="w-100" alt="Client Anastasia">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="top_btn">
+            <button type="button" class="material-scrolltop" title="Scroll to top"><i class="fa-solid fa-angle-up"></i></button>
+        </div>
+    </section>
+    <!-- fifth section end -->
+
+    <!-- footer start -->
+    <section class="footer common_section">
+        <div class="container" data-aos="fade-in" data-aos-duration="1000">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="address">
+                        <h4 class="f_h4">Our Address</h4>
+                        <address>
+                            Gulshan, Dhaka 1216 <br>
+                            Road 12, block #k <br>
+                            House no-212.
+                        </address>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/material-scrolltop.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/fontawesome.js" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/write.js"></script>
+</body>
+
+</html>
