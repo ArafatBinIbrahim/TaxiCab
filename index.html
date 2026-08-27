@@ -12,6 +12,11 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 
 <body>
@@ -296,7 +301,7 @@
     <!-- fifth section end -->
 
     <!-- footer start -->
-    <section class="footer common_section">
+    <section class="footer common_section" id="contact">
         <div class="container" data-aos="fade-in" data-aos-duration="1000">
             <div class="row">
                 <div class="col-md-4">
@@ -313,13 +318,34 @@
         </div>
     </section>
 
+    <!-- JS Files -->
     <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/material-scrolltop.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/fontawesome.js" crossorigin="anonymous"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/aos.js"></script>
     <script src="js/write.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // AOS Init
+            if (typeof AOS !== 'undefined') {
+                AOS.init();
+            }
+
+            // Smooth Scroll for Nav Links
+            $('.nav-link').on('click', function (e) {
+                var target = $(this).attr('href');
+                if (target.startsWith('#') && $(target).length) {
+                    e.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: $(target).offset().top - 70
+                    }, 600);
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
